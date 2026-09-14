@@ -4,7 +4,7 @@
         {
             "label": "Push DSA Solution",
             "type": "shell",
-            "command": "git add . && git commit -m \"Add DSA solution\" && git push",
+            "command": "${workspaceFolder}/.vscode/scripts/push-dsa.sh",
             "problemMatcher": []
         }
     ]
