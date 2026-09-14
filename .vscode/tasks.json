@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Push DSA Solution",
+            "type": "shell",
+            "command": "git add . && git commit -m \"Add DSA solution\" && git push",
+            "problemMatcher": []
+        }
+    ]
+}
