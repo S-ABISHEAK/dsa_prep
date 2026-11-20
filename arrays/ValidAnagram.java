@@ -1,4 +1,4 @@
-class Solution {
+class ValidAnagram {
     public boolean isAnagram(String s, String t) {
 
         if(s.length() != t.length()){ // Without this we will hit string index out of bound error

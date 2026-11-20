@@ -18,7 +18,7 @@ class Node {
 }
 */
 
-class Solution {
+class CloneGraph {
     public Node cloneGraph(Node node) {
         
         //MAPS the real : copy node to manage the visited nature 
@@ -47,5 +47,9 @@ class Solution {
         }
 
         return cpy;
+    }
+
+    public static void main(String[]args){
+        
     }
 }
