@@ -1,10 +1,10 @@
 public class MaxWeightNode {
     public int maxweight(int edge[]){
         int n = edge.length;
-        int weights[] = new int[n];
+        int weights[] = new int[n];   // stores the sum of value nodes connected to each value giving us the answer
         
         for(int i = 0 ; i < n ; i++){
-            if(edge[i] != -1){
+            if(edge[i] >= 0 && edge[i] < n){
                 weights[edge[i]] += i;
             }
         }
@@ -22,7 +22,7 @@ public class MaxWeightNode {
         return ans;
     }
     public static void main(String[]args){
-        int[] edge = {2, 0, -1, 2};
+        int[] edge = {2, 0, -1, 2, 6};
         MaxWeightNode obj = new MaxWeightNode();
         System.out.println(obj.maxweight(edge));
     }
